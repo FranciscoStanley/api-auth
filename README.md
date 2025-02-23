@@ -1,7 +1,7 @@
 # Service Auth
 
 ## Descrição
-API de autenticação segura utilizando Node.js, Express, MongoDB e JWT.
+API de autenticação segura utilizando Node.js, Express, MongoDB, BCRYPT e JWT.
 
 ## Requisitos
 - Node.js 18+
