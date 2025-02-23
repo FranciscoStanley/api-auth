@@ -1,12 +1,14 @@
 # Service Auth
 
 ## Descrição
-API de autenticação segura utilizando Node.js, Express, MongoDB, BCRYPT e JWT.
+API de autenticação segura utilizando Node.js, Express, MongoDB, JWT e bcrypt para hash de senhas.
+API de autenticação segura utilizando Node.js, Express, MongoDB e JWT.
 
 ## Requisitos
 - Node.js 18+
 - MongoDB
 - Docker (opcional)
+- bcrypt para hash de senhas
 
 ## Instalação
 Clone o repositório e instale as dependências:
@@ -20,7 +22,7 @@ npm install
 Crie um arquivo `.env` na raiz do projeto:
 ```
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/auth_db
+MONGO_URI=mongodb://localhost:27017/auth_db # Ajuste o URI se estiver rodando o MongoDB em um contêiner Docker ou servidor remoto
 JWT_SECRET=sua_chave_secreta
 ```
 
@@ -39,6 +41,11 @@ npm start
 Para rodar com Docker Compose:
 ```sh
 docker-compose up --build
+```
+
+Para parar os contêineres:
+```sh
+docker-compose down
 ```
 
 ## Endpoints
